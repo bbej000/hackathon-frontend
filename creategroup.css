@@ -1,0 +1,125 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #7640a3;
+}
+@font-face {
+  font-family: 'league-gothic';
+  src: url('LeagueGothic-Regular.otf');
+}
+.headerText {
+  font-family: league-gothic, sans-serif;
+  font-size: 25px;
+  color: white;
+}
+#logoTopLeft {
+  top: 4%;
+  height: 7%;
+  left: 5%;
+  position: absolute;
+}
+#profilePicTopRight {
+  top: 4%;
+  height: 7%;
+  right: 6%;
+  position: absolute;
+}
+#create-container{
+  font-family: league-gothic, sans-serif;
+  color: white;
+  background-color: #fa86cb;
+  position: relative;
+  top: 15%;
+  border-radius:15px;
+  width:65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:15%;
+}
+#title-container{
+  background-color: #ffde69;
+  padding: 3%;
+  padding-left:10%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+h1{
+  font-size: 50px;
+  line-height: 10px;
+  letter-spacing: 1px;
+}
+#criteria-container{
+  font-size: 25px;
+  letter-spacing: 1px;
+  line-height: 10px;
+  background-color: #78d1cc;
+  padding-left: 10%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  padding-top: 3%;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+}
+.criteria-text-box{
+  width: 80%;
+  height: 30px;
+  font-family: league-gothic, sans-serif;
+  font-size: 60%;
+  letter-spacing: 0.5px;
+  border:none;
+  border-radius:5px;
+  padding-left:1.5%;
+  margin-bottom:3%;
+}
+.criteria-text-box:focus{
+  outline:none;
+}
+.input-text{
+  margin-bottom:50px;
+}
+label{
+  font-size: 80%;
+  letter-spacing: 0px;
+  color:#716e6e;
+}
+#criteria-textarea{
+  width: 150%;
+  height: 60px;
+  font-family: league-gothic, sans-serif;
+  font-size: 60%;
+  letter-spacing: 0.5px;
+  border:none;
+  border-radius:5px;
+  padding:1.5%;
+}
+#criteria-textarea:focus{
+  outline:none;
+}
+
+#submit-button{
+  border-radius:15px;
+  font-family: league-gothic, sans-serif;
+  font-size:80%;
+  color: white;
+  height:34px;
+  width:15%;
+  border:none;
+  background-color:#716e6e;
+  margin-top: 5%;
+  padding:0px;
+  outline: none;
+
+}
+#submit-button:hover{
+  background-color:#8f8f8f;
+}
+
+#right-col{
+  float:right;
+  width:50%;
+}
+#left-col{
+  width:50%;
+}
