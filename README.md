@@ -1,1 +1,1 @@
-# hackathon-homepage-bhadra
+# hackathon-frontend
