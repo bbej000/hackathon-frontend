@@ -5,232 +5,25 @@
     <meta charset="utf-8">
 
     <link rel="stylesheet" type="text/css" href="glide.css">
-
-    <style>
-      html, body {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        background-color: #fa86cb;
-      }
-      @font-face {
-        font-family: 'league-gothic';
-        src: url('LeagueGothic-Regular.otf');
-      }
-      .headerText {
-        font-family: league-gothic, sans-serif;
-        font-size: 25px;
-        color: white;
-      }
-      #logoTopLeft {
-        top: 4%;
-        height: 7%;
-        left: 5%;
-        position: absolute;
-      }
-      #profilePicTopRight {
-        top: 4%;
-        height: 7%;
-        right: 6%;
-        position: absolute;
-      }
-      #myProfileBoxHeader {
-        padding-left: 8%;
-        padding-top: 5%;
-        width: 50%;
-        border-bottom: 3px solid white;
-      }
-      #myGroupsBoxHeader {
-        padding-left: 4%;
-        padding-top: 2%;
-        width: 30%;
-        border-bottom: 3px solid white;
-      }
-      #myMeetingsBoxHeader {
-        padding-left: 4%;
-        padding-top: 2%;
-        width: 30%;
-        border-bottom: 3px solid white;
-      }
-      #myProfileBox {
-        background-color: #ffde69;
-        color: white;
-        top: 15%;
-        height: 75%;
-        left: 5%;
-        width: 25%;
-        border-radius: 10px;
-        position: absolute;
-      }
-      #myGroupsBox {
-        background-color: #78d1cc;
-        color: white;
-        top: 15%;
-        height: 35%;
-        left: 33%;
-        width: 62%;
-        border-radius: 10px;
-        position: absolute;
-      }
-      #myMeetingsBox {
-        background-color: #7640a3;
-        color: white;
-        top: 55%;
-        height: 35%;
-        left: 33%;
-        width: 62%;
-        border-radius: 10px;
-        position: absolute;
-      }
-      #profilePicContainer {
-        top: 5%;
-        width: 60%;
-        left: 20%;
-        position: relative;
-      }
-      #profileInfoContainer {
-        top: 10%;
-        width: 90%;
-        left: 5%;
-        position: relative;
-        text-align: center;
-      }
-      .profileText {
-        font-family: league-gothic, sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        color: white;
-      }
-      #timezoneButtonContainer {
-        padding-top: 8%;
-        position: relative;
-      }
-      #timezoneButton {
-        padding: 8px 16px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 14px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        background-color: white;
-        color: #a6a6a6;
-        border: 2px solid #a6a6a6;
-        border-radius: 25px;
-      }
-      #timezoneButton:hover {
-        background-color: #a6a6a6;
-        color: white;
-      }
-      #myGroupsContainer {
-        top: 2%;
-        left: 5%;
-        position: relative;
-        width: 90%;
-      }
-      #myMeetingsContainer {
-        top: 2%;
-        left: 5%;
-        position: relative;
-        width: 90%;
-      }
-      .groupBlock {
-        background-color: #d1e8e7;
-        color: #a6a6a6;
-        height: 100%;
-        width: 100%;
-        border-radius: 5px;
-        position: relative;
-        padding-top: 15%;
-        padding-bottom: 15%;
-        text-align: center;
-      }
-      .groupBlockTitle {
-        font-family: league-gothic, sans-serif;
-        font-size: 20px;
-        color: white;
-      }
-      .groupBlockButton {
-        padding: 4px 8px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 14px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        background-color: white;
-        color: #78d1cc;
-        border: 2px solid #78d1cc;
-        border-radius: 25px;
-      }
-      .groupBlockButton:hover {
-        background-color: #78d1cc;
-        color: white;
-      }
-      .spacer {
-        font-family: league-gothic, sans-serif;
-        font-size: 10px;
-        font-weight: 500;
-        color: white;
-      }
-      .meetingTime {
-        font-family: league-gothic, sans-serif;
-        font-size: 12px;
-        font-weight: 500;
-        color: white;
-      }
-      .meetingBlock {
-        background-color: #c8b3da;
-        color: #a6a6a6;
-        height: 100%;
-        width: 100%;
-        border-radius: 5px;
-        position: relative;
-        padding-top: 15%;
-        padding-bottom: 15%;
-        text-align: center;
-      }
-      .meetingBlockTitle {
-        font-family: league-gothic, sans-serif;
-        font-size: 20px;
-        color: white;
-      }
-      .meetingBlockButton {
-        padding: 4px 8px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 14px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        background-color: white;
-        color: #7640a3;
-        border: 2px solid #7640a3;
-        border-radius: 25px;
-      }
-      .meetingBlockButton:hover {
-        background-color: #7640a3;
-        color: white;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="profilepage.css">
 
   </head>
 
 
   <body>
-    <div id="logoTopLeft">
-      <a href="homepage.html">
-      <img src="https://hoonchang.github.io/hackourcampus2020/logo.png" alt="Logo" max-width="100%" height="100%">
-      </a>
-    </div>
-    <div id="profilePicTopRight">
-      <a href="profilepage.html">
-      <img src="https://hoonchang.github.io/hackourcampus2020/profilepic.png" alt="Profile Picture" max-width="100%" height="100%">
-      </a>
-    </div>
+    <nav>
+      <div id="logoTopLeft">
+        <a href="homepage.html">
+        <img src="logo.png" alt="Logo" max-width="100%" height="100%">
+        </a>
+      </div>
+
+      <div id="profilePicTopRight">
+        <a href="profilepage.html">
+        <img src="https://hoonchang.github.io/hackourcampus2020/profilepic.png" alt="Profile Picture" max-width="100%" height="100%">
+        </a>
+      </div>
+    </nav>
     <div id="myProfileBox">
       <div id="myProfileBoxHeader">
         <div class="headerText">
@@ -242,16 +35,23 @@
       </div>
       <div id="profileInfoContainer">
         <div class="profileText">
-          Firstname Lastname
+          Ezra Cornell
         </div>
         <div class="profileText">
           &nbsp;
         </div>
         <div class="profileText">
-          Timezone: EDT - Eastern Daylight Time (UTC -4)
+          Timezone: EDT (UTC -4)
         </div>
         <div id="timezoneButtonContainer">
-          <button type="button" id="timezoneButton">Change Timezone</button>
+          <div class="dropdown">
+            <button onclick="myFunction()" id="timezoneButton">Change Timezone</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#PDT">PDT</a>
+              <a href="#MDT">MDT</a>
+              <a href="#CDT">CDT</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -274,7 +74,7 @@
                   <div class="spacer">
                     &nbsp;
                   </div>
-                  <button type="button" class="groupBlockButton">Details</button>
+                  <a href="groupdash.html"><button type="button" class="meetingBlockButton">Details</button></a>
                 </div>
               </li>
               <li class="glide__slide">
@@ -285,7 +85,7 @@
                   <div class="spacer">
                     &nbsp;
                   </div>
-                  <button type="button" class="groupBlockButton">Details</button>
+                  <a href="groupdash.html"><button type="button" class="meetingBlockButton">Details</button></a>
                 </div>
               </li>
               <li class="glide__slide">
@@ -296,7 +96,7 @@
                   <div class="spacer">
                     &nbsp;
                   </div>
-                  <button type="button" class="groupBlockButton">Details</button>
+                  <a href="groupdash.html"><button type="button" class="meetingBlockButton">Details</button></a>
                 </div>
               </li>
             </ul>
@@ -312,7 +112,7 @@
     <div id="myMeetingsBox">
       <div id="myMeetingsBoxHeader">
         <div class="headerText">
-          MY MEETINGS
+          MY MEETINGS TODAY
         </div>
       </div>
       <div id="myMeetingsContainer">
@@ -327,7 +127,7 @@
                   <div class="meetingTime">
                     Starts at 11:00 AM
                   </div>
-                  <button type="button" class="meetingBlockButton">Details</button>
+                  <a href="groupdash.html"><button type="button" class="meetingBlockButton">Details</button></a>
                 </div>
               </li>
               <li class="glide__slide">
@@ -338,7 +138,7 @@
                   <div class="meetingTime">
                     Starts at 11:30 AM
                   </div>
-                  <button type="button" class="meetingBlockButton">Details</button>
+                  <a href="groupdash.html"><button type="button" class="meetingBlockButton">Details</button></a>
                 </div>
               </li>
               <li class="glide__slide">
@@ -349,7 +149,7 @@
                   <div class="meetingTime">
                     Starts at 1:00 PM
                   </div>
-                  <button type="button" class="meetingBlockButton">Details</button>
+                  <a href="groupdash.html"><button type="button" class="meetingBlockButton">Details</button></a>
                 </div>
               </li>
             </ul>
@@ -362,11 +162,34 @@
       </div>
     </div>
 
+  <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('#timezoneButton')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   <script>
     const sliders = document.querySelectorAll('.glide')
     const conf = {
     	type: 'carousel',
+      autoplay: 2000,
       perView: 3
     }
     sliders.forEach(item => {
