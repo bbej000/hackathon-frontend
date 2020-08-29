@@ -16,13 +16,12 @@ nav{
     grid-template-areas:
     "logo profile";
     justify-content: center;
-    margin:0;
+    margin-top:2%;
     padding:0;
     background-color:none;
-    height:100%;
+    height:20%;
 
 }
-
 .headerText {
   font-family: league-gothic, sans-serif;
   font-size: 25px;
@@ -30,13 +29,13 @@ nav{
 }
 #logoTopLeft {
   top: 3%;
-  height: 19%;
+  height: 100%;
   left: 5%;
   position: absolute;
 }
 #profilePicTopRight {
   top: 4%;
-  height: 7%;
+  height: 35%;
   right: 6%;
   position: absolute;
 }
@@ -57,20 +56,78 @@ nav{
   background-color: #7640a3;
   padding-left:1%;
   border-radius: 15px;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
 }
 
 h1{
   font-size: 50px;
   letter-spacing: 1px;
-  line-height: 10%;
   padding: 5%;
 }
-
+#join-button{
+  float: right;
+  margin-top:3%;
+  margin-right:3%;
+  color: white;
+  background-color: #7640a3;
+  border: none;
+  font-size: 70px;
+  padding: 1%;
+}
+#join-button:hover{
+  color:#8f8f8f;
+}
 #basicinfo-container{
+  float:left;
   background-color: #fa86cb;
   color: white;
-  height: 75%;
-  width: 25%;
+  width: 20%;
   border-radius: 10px;
-  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+}
+button:focus{
+  outline: none;
+}
+#members-container{
+  background-color: #78d1cc;
+  color: white;
+  width: 72%;
+  margin-left:25%;
+  border-radius: 10px;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  padding-top: 0.1%;
+  padding-left: 3%;
+  padding-bottom: 0.1%;
+}
+#media-links{
+  float:left;
+  background-color: #78d1cc;
+  color: white;
+  width: 60%;
+  border-radius: 10px;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  padding-top: 0.1%;
+  padding-left: 3%;
+  padding-bottom: 1%;
+}
+#linktomeet{
+  background-color: #fa86cb;
+  color: white;
+  width: 32%;
+  margin-left: 65%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  padding-top: 0.1%;
+  padding-left: 3%;
+  padding-bottom: 1%;
 }

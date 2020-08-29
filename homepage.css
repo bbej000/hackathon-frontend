@@ -29,6 +29,20 @@ nav{
 
 }
 
+nav{
+    position:fixed;
+    top:0px;
+    display:grid;
+    grid-template-columns:50vw 50vw;
+    grid-template-areas:
+    "logo profile";
+    justify-content: center;
+    margin-top:2%;
+    padding:0;
+    background-color:none;
+    height:20%;
+
+}
 .headerText {
   font-family: league-gothic, sans-serif;
   font-size: 25px;
@@ -36,17 +50,16 @@ nav{
 }
 #logoTopLeft {
   top: 3%;
-  height: 19%;
+  height: 100%;
   left: 5%;
   position: absolute;
 }
 #profilePicTopRight {
   top: 4%;
-  height: 7%;
+  height: 35%;
   right: 6%;
   position: absolute;
 }
-
 /**#logo{
     grid-area:logo;
     justify-self:start;

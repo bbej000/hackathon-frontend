@@ -8,6 +8,20 @@ html, body {
   font-family: 'league-gothic';
   src: url('LeagueGothic-Regular.otf');
 }
+nav{
+    position:fixed;
+    top:0px;
+    display:grid;
+    grid-template-columns:50vw 50vw;
+    grid-template-areas:
+    "logo profile";
+    justify-content: center;
+    margin-top:2%;
+    padding:0;
+    background-color:none;
+    height:20%;
+
+}
 .headerText {
   font-family: league-gothic, sans-serif;
   font-size: 25px;
@@ -15,13 +29,13 @@ html, body {
 }
 #logoTopLeft {
   top: 3%;
-  height: 19%;
+  height: 100%;
   left: 5%;
   position: absolute;
 }
 #profilePicTopRight {
   top: 4%;
-  height: 7%;
+  height: 35%;
   right: 6%;
   position: absolute;
 }
@@ -49,6 +63,7 @@ html, body {
   width: 25%;
   border-radius: 10px;
   position: absolute;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
 }
 #myGroupsBox {
   background-color: #78d1cc;
@@ -59,6 +74,7 @@ html, body {
   width: 62%;
   border-radius: 10px;
   position: absolute;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
 }
 #myMeetingsBox {
   background-color: #7640a3;
@@ -69,6 +85,7 @@ html, body {
   width: 62%;
   border-radius: 10px;
   position: absolute;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
 }
 #profilePicContainer {
   top: 5%;
@@ -208,11 +225,12 @@ html, body {
   position: relative;
 }
 #timezoneButton {
+  font-family: league-gothic, sans-serif;
   padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: 20px;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -226,4 +244,8 @@ html, body {
   background-color: #a6a6a6;
   color: white;
   outline:none;
+}
+
+button:focus{
+  outline: none;
 }
